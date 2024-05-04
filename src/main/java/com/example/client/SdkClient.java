@@ -23,14 +23,14 @@ public class SdkClient {
         this.accessKey = accessKey;
         this.secretKey = secretKey;
     }
-    /**
-     * @param name
-     * @descr
-     * 1、客户端发来的 ak ，sk .这边进行加密处理
-     * 2、发送到请求接口，加密之后的ak和sk,从数据库中拿出来，进行同样方式加密
-     * 3、进行对比。如果相同则通过，反之无权限。
-     * 4、防止重放，使用redis中间件，缓存数据。随机数+时间戳。进行防止重放。
-     */
+//    /**
+//     * @param name
+//     * @descr
+//     * 1、客户端发来的 ak ，sk .这边进行加密处理
+//     * 2、发送到请求接口，加密之后的ak和sk,从数据库中拿出来，进行同样方式加密
+//     * 3、进行对比。如果相同则通过，反之无权限。
+//     * 4、防止重放，使用redis中间件，缓存数据。随机数+时间戳。进行防止重放。
+//     */
 
 
     public  String getUserNameByGet(String name){
